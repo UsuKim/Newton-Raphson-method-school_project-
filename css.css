@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: #181E24;
+    background: linear-gradient(to right, #121c25 20%, #271616 90%);
+}
+
+p {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-container {
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 100px 180px 110px 550px;
+    margin-top: 20px;
+}
+
+.title-container {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;
+    color: white;
+}
+
+.input-container {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    line-height: 40px;
+    text-shadow: 0px 0px 2px white;
+}
+
+.input-style {
+    height: 35px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 25px;
+    padding: 1px 8px;
+    box-shadow: 0px 0px 5px white;
+}
+
+.input-button {
+    height: 38px;
+    width: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px white;
+}
+
+#optimization {
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+}
+
+#initial-guess {
+    height: 25px;
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.equation-container {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 0px 0px 2px white;
+}
+
+#number {
+    float: left;
+    margin-left: 10px;
+}
+
+.plot-graph {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px white;
+    margin-top: 10px;
+}
+
+#controls {
+    margin-left: 20px;
+}
+
+.control-button {
+    height: 50px;
+    width: 80px;
+    background-color: #c3ccd4;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    border-color: #121c25;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(138, 138, 138);
+}
+
+#number-x {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}

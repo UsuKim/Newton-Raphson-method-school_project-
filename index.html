@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script>
+        MathJax = {
+          loader: {load: ['input/asciimath', 'output/chtml']}
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+    <script src="function-plot.js"></script>
+    <script src="nerdamer.core.js"></script>
+    <script src="Calculus.js"></script>
+    <title>뉴턴-랩슨 방법 계산기</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-container">뉴턴-랩슨 방법 계산기</div>
+        <div class="input-container">
+            <form id="input-form">
+                방정식을 입력해 주세요:<br>
+                <input class="input-style" id="equation-input" type="text" size=25 value="x^2" required autocomplete="off">
+                <input class="input-button" type="submit" value="Go"><br>
+                처음값: 
+                <input class="input-style" id="initial-guess" type="text" required autocomplete="off">
+            </form>
+            <input class="input-button" id="optimization" type="button" value="식 최적화" onclick="optimize();">
+        </div>
+        <div class="equation-container">
+            <p id="equation">`x^2=0`</p>
+            <p class="hidden" id="number">#1</p>
+        </div>
+        <div class="plot-graph hidden">
+            <div id="plot"></div>
+            <!-- <script type=module>
+                functionPlot({
+                    target: '#plot',
+                    width: 790,
+                    height: 500,
+                    grid: true,
+                    data: [{
+                        fn: 'x^2'
+                    }]
+                })
+            </script> -->
+            <div id="controls">
+                <input class="control-button" id="next" type="button" value="다음">
+                <p id="number-x">x=</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="math/asciimath">sum_(i=1)^n i^3=((n(n+1))/2)</script>
+</body>
+</html>
