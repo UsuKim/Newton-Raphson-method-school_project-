@@ -18,7 +18,7 @@ p {
     width: 800px;
     margin: auto;
     display: grid;
-    grid-template-rows: 100px 180px 110px 550px;
+    grid-template-rows: 90px 20px 180px 110px 550px;
     margin-top: 20px;
 }
 
@@ -29,6 +29,13 @@ p {
     font-weight: 700;
     font-size: 65px;
     text-align: center;
+    color: white;
+}
+
+.my-name {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 110px;
     color: white;
 }
 
